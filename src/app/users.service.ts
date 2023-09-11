@@ -1,12 +1,12 @@
-import { Injectable } from "@angular/core";
+import { Injectable } from '@angular/core';
 
-import { CounterService } from "./counter.service";
+import { CounterService } from './counter.service';
 
 @Injectable()
 export class UsersService {
   activeUsers = ['Max', 'Anna'];
   inactiveUsers = ['Chris', 'Manu'];
- 
+
   constructor(private counterService: CounterService) {}
 
   setToActive(id: number) {

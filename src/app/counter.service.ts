@@ -13,6 +13,6 @@ export class CounterService {
   }
 
   countUsers(userType: string, usersArray: string[]) {
-    console.log("number of " + userType + " users " + usersArray.length)
+    console.log('number of ' + userType + ' users ' + usersArray.length);
   }
 }

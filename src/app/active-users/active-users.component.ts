@@ -9,7 +9,7 @@ import { UsersService } from '../users.service';
 export class ActiveUsersComponent implements OnInit {
   users!: string[];
 
-  constructor(private usersService: UsersService) { }
+  constructor(private usersService: UsersService) {}
 
   ngOnInit(): void {
     this.users = this.usersService.activeUsers;

@@ -13,11 +13,13 @@ export class UsersService {
     this.activeUsers.push(this.inactiveUsers[id]);
     this.inactiveUsers.splice(id, 1);
     this.counterService.incrementInactiveToActive();
+    this.counterService.countUsers('active', this.activeUsers);
   }
 
   setToInactive(id: number) {
     this.inactiveUsers.push(this.activeUsers[id]);
     this.activeUsers.splice(id, 1);
     this.counterService.incrementActiveToInactive();
+    this.counterService.countUsers('inactive', this.inactiveUsers);
   }
 }

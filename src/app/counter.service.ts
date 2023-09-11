@@ -11,4 +11,8 @@ export class CounterService {
     this.inactiveToActiveCounter++;
     console.log('Inactive to active: ' + this.inactiveToActiveCounter);
   }
+
+  countUsers(userType: string, usersArray: string[]) {
+    console.log("number of " + userType + " users " + usersArray.length)
+  }
 }
